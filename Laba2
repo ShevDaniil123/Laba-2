@@ -1,0 +1,13 @@
+@startuml
+left to right direction
+skingram packegeStyle rect
+actor client
+actor bank
+rectangl ATM {
+  client-- (check cash)
+  client-- (withdraw cath)
+  client-- (put money on the card)
+  (withdraw cath) -> (check cash) : extends
+  bank -- (check cash)
+}
+@enduml
